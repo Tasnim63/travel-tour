@@ -15,7 +15,7 @@
   --text: #5C626A;
   --text_lighter: #969BA1;
   --accent: #000000;
-  --lighter: #BDC2CB;
+  --lighter: #f3f6fa;
   --border: #CFD3DA;
 }
 // ////////////common css style that will be used
@@ -48,18 +48,19 @@ li{
 }
 .btn{
   padding: .6rem 1.5rem;
-  background: var( --secondary_hover);
+  background-image: linear-gradient(to right, rgb(235, 235, 210), var(--secondary_hover));
   border-radius: 3rem;
   border: none;
   outline: none;
   cursor: pointer;
 }
 .btn a{
-  color: var(--primary);
+  color: var(--lighter);
   font-weight: 500;
+
 }
 .btn:hover{
-  background: var(--secondary);
+  background-image: linear-gradient(to right, var(--secondary_hover) , rgb(235, 235, 210));
 }
 img , video{
   width: 100%;

@@ -1,0 +1,98 @@
+:root{
+    --primary: #E46D30;
+    --primary_hover: #db5d1c;
+    --secondary: #6b6724;
+    --secondary_hover: #969355;
+    --text: #5C626A;
+    --text_lighter: #969BA1;
+    --accent: #000000;
+    --lighter: #f3f6fa;
+    --border: #CFD3DA;
+  }
+
+
+  .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#8a8a88;
+    width: 100%;
+    padding:1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2 ,15 ,29 , 0.904);
+.logo{
+    width: 150px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  
+}
+@media screen and(max-width:768px){
+    .navBar{
+        position: absolute;
+        background-color: var(--lighter);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2 ,15 ,29 , 0.904);
+        transition: .3s ease-in-out;
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding: .5rem 0;
+            .navItem{
+                padding: .5rem 0;
+                .navLink{
+                   color: var(--secondary); 
+                   font-size: .9rem;
+                   font-weight: 600;
+                   &:hover{
+                    color: var(--secondary_hover);
+                   }
+                }
+            }
+            .btn{
+                margin-top: 1rem;
+                a{
+                    color: var(--lighter);
+                    font-weight: 600;
+                }
+            }
+        }
+        .closeNavbar {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color: var(--secondary);
+            &:hover{
+                color: var(--secondary);
+            }
+            .icon{
+                color: rgb(249, 246, 246);
+                background-color: var(--secondary);
+            }
+           
+        }
+    }
+    .activeNavbar{
+        top: 7rem;
+    }
+    
+}
+.toggleNavbar{
+    .icon{
+        font-size: 25px;
+        color: var(--secondary);
+    }&:hover{
+        color:var(--secondary_hover) ;
+    }
+}
+  }
