@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+/////////////////colors and styling
+:root{
+  --primary: #E46D30;
+  --primary_hover: #db5d1c;
+  --secondary: #8E8A46;
+  --secondary_hover: #7f7c3f;
+  --text: #5C626A;
+  --text_lighter: #969BA1;
+  --accent: #000000;
+  --lighter: #BDC2CB;
+  --border: #CFD3DA;
+}
+// ////////////common css style that will be used
+a{
+  text-decoration: none;
+
+}
+li{
+  list-style: none;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right:1.5rem ;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+.btn{
+  padding: .6rem 1.5rem;
+  background: var( --secondary_hover);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn a{
+  color: var(--primary);
+  font-weight: 500;
+}
+.btn:hover{
+  background: var(--secondary);
+}
+img , video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+
+}
+body{
+  background-color: #fde8e8;
+}
