@@ -10,8 +10,8 @@ function App() {
   return (
     <>
  <Header></Header>
-{/* <Home></Home>
-<Main></Main>
+<Home></Home>
+{/* <Main></Main>
 <Footer></Footer> */}
     </>
   );
